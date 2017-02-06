@@ -1,0 +1,226 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\huge \textsc{Abhishek} \textsc{Bhatta}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\section{Personal Information}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Bhimdatta-18,Kahchanpur  | 24 Sept 1994 \\
+    \textsc{Address:}   & Dhulikhel, Kavre \\
+    \textsc{Nationality:} & Nepalese\\
+    \textsc{Language:} & Nepali, English, Hindi\\
+    \textsc{Phone:}     & (977)9843288950\\
+    \textsc{Email:}     & \href{mailto:aviisekh@gmail.com}{aviisekh@gmail.com}\\
+    \textsc{Linkedin:} & \href{https://www.linkedin.com/in/aviisekh}{linkedin.com/in/aviisekh}\\
+    \textsc{Github:} & \href{https://www.github.com/aviisekh}{github.com/aviisekh}\\
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Experience}
+\begin{tabular}{r|p{11cm}}
+\emph{Current} & \textbf{Associate Software Engnieer}\\ \textsc{September 2016} & \emph{\textsc{Leapfrog Technologies}} \\&\footnotesize{Javascript, EmberJs, Ruby, Ruby on Rails}\\\multicolumn{2}{c}{} \\
+ \emph{Sept 2016} & \textbf{Intern}\\ \textsc{June 2016} & \emph{\textsc{Leapfrog Technologies}} \\&\footnotesize{Android, Python, Machine Learning, Neural Networks}\\\multicolumn{2}{c}{} \\
+ \emph{April 2016} & \textbf{Marketing person}\\ \textsc{April 2015} & \emph{\textsc{AIESEC} in \textsc{Kathmandu University}} \\&\footnotesize{Promotion, Creative Designs, Information Management, Social Media Market Analysis}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{rl}	
+\textsc{Programming Concepts:} &OOP, Datastructures, Design Patterns, Web Development \\
+								& TDD, Agile Methodologies\\\\
+\textsc{Programming Skills:}  & Java, Android, Python, Ruby, Javascript, C, C++, Shell Scripting\\\\
+\textsc{Database:} & MySQL, SQLite, Postgres\\\\
+\textsc{Framework:} &Ruby on Rails, EmberJs  \\\\
+\textsc{Design and IDE tools:} & Adobe Photoshop, GIMP, TexMaker\\
+							   & vi/vim, Sublime, Rubymine, Intellij, Android Studio, Eclipse\\\\
+\textsc{Project Management Tools:} & Jira, Trello, Waffle\\\\	
+\textsc{Office Tools/Typesetting:} & Microsoft Office Package,\\
+								   & Libre Office Package,\\
+								   & Markdown, HTML, CSS, LaTex\\\\
+								   
+\textsc{Operating Systems:} &Linux\\
+							&Windows XP/7/8\\\\
+							
+\textsc{Non-technical Skills:} &Report Writing, Presentations, Communication, Soft Skills\\\\			 
+\end{tabular}
+
+
+
+\section{Projects}
+\begin{tabular}{r|p{11cm}}
+
+\emph{Current} & \textbf{r3}\\ \textsc{Jan 2017} & \small{r3 is a client based web app for Language Scientific company that aims to manage the projects of the company. 
+\footnotesize{
+\begin{itemize}
+\item Project is based on ROR and jquery.
+\item Project implements the core concepts of workflow.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+\emph{Jan 2017} & \textbf{Msights Object Manager}\\ \textsc{Sept 2016} & \small{It is a client based web app for Msights that helped the visualization of their database and help to organize the records in their database. 
+\footnotesize{
+\begin{itemize}
+\item Project is based on ROR for backend and EmberJs at frontend.
+\item Project implements the core concepts of creating the meta-schema of the database.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+\emph{Sept 2016} & \textbf{RCardScanner}\\ \textsc{June 2016} & \small{RCardScanner is an android application that OCR the recharge pin number
+from cellphone recharge card and recharges it automatically.
+\footnotesize{
+\begin{itemize}
+\item No libraries used for development. Pure Research based project.
+\item Recognition was aided by trained neural networks.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+7\textsuperscript{th} sem & \textbf{HUSKY Robot}\\ \textsc{Dec 2015} & \small{Husky is an automatic robot designed as the requirement for the competition organized by Robotics Association Nepal.
+\footnotesize{
+\begin{itemize}
+\item Used ultrasonic and IR sensors for the input of enviroment on Arduino.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+6\textsuperscript{th} sem & \textbf{LUDO game}\\ \textsc{July 2014} & \small{A two player desktop game programmed in Ruby.
+\footnotesize{
+\begin{itemize}
+\item Console and GUI version.
+\item GOSU library used for GUI.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+5\textsuperscript{th} sem & \textbf{OCR}\\ \textsc{Jan 2015} & \small{Recognition of characters from digital documents.
+\footnotesize{
+\begin{itemize}
+\item C++ with OpenCV used for image processing and development of ANN model.
+\item Backpropagation Algorithm Implementation.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+4\textsuperscript{th} sem & \textbf{Search Engine}\\ \textsc{July 2014} & \small{A search engine developed for e-library.
+\footnotesize{
+\begin{itemize}
+\item Python script used for programming and sqlite database used for buffer location to perform search.
+\item Scrape the contents of materials of the e-library (i.e. pdf,documents,metadata of image,audio, video files,html files, etc.) 
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+
+3\textsuperscript{th} sem & \textbf{Markdown to LaTex converter}\\ \textsc{Jan 2014} & \small{Python Script to convert simple markup language i.e.Markdown to complex documentation language LaTex.
+\footnotesize{
+\begin{itemize}
+\item Regex used for pattern matching and parsing the source language.
+\end{itemize}
+}}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Acheivements}
+\begin{tabular}{rl}	
+ \textsc{Dec 2015}  & Won robotic competition conducted by Robotics Association Nepal(RAN) \\
+ & Automatic Akhada category\\
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+2016  & Bachelors in \textsc{Computer Engineering}\\
+2012 & \textbf{Kathmandu University},Dhulikhel, Kavre\\
+& \normalsize \textsc{Gpa}: 3.64 / 4.0\\\\
+2012 & HSEB 10+2 \\ 
+2010 &\normalsize\textbf{Radiant Higher Secondary School}, Kanchanpur\\
+&Marks obtained: 79.5\%\\&\\
+2010& SLC\\ & \textbf{Adarsh Vidya Niketan}, Kanchanpur\\
+&Marks obtained: 83\%\\&\\
+\end{tabular}
+
+\section{Volunteering and Participations}
+\begin{tabular}{rl}	
+\textsc{2017}  & Quartely Allhands at Leapfrog Technology\\
+ 				& Organizing Committee\\\\
+ \textsc{2016}  & IT Meet, 2016\\
+ 				& Organizing Committee\\\\
+ \textsc{2015} & Organised counselling classes for the +2 students at Kanchanpur with local club.\\
+ &Ogranized the IT Meet, 2015\\\\
+ \textsc{2013} & Volunteered in Community Education Project at Charikot, Dolakha
+\end{tabular}
+
+
+\section{Hobbies}
+Technology, Open-Source, Programming, Automation, Machine Learning, Reading\\
+Cricket, Table Tennis, Playing Guitar and Flute, Travelling\\
+
+\section{References}
+Available on request
+
+
+\end{document}
+
