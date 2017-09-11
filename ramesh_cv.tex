@@ -1,0 +1,173 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\subsubsection}{0pt}{3pt}{1pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\huge \textsc{Ramesh} \textsc{Singh}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\section{Career Objective}
+To work in globally competitive environment on challenging assignments that shall yield the twin benefits of job satisfaction and a steady-pace professional growth.
+
+\section{Personal Information}
+\begin{tabular}{rl}
+    \textsc{Place of Birth:} & Bhimdatta-18,Kahchanpur \\
+    \textsc{Address:}   & New Baneshwar, Kathmandu \\
+    \textsc{Nationality:} & Nepalese\\
+    \textsc{Language:} & Nepali, English, Hindi\\
+    \textsc{Phone:}     & (977)9848756446 , (977)9809475295\\
+    \textsc{Email:}     & \href{mailto:rameshsingh6446@gmail.com}{rameshsingh6446@gmail.com}\\
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Experience}
+\begin{tabular}{r|p{11cm}}
+\emph{1 year work experice} & \textbf{Gupta Construction}\\\multicolumn{2}{c}{} \\
+ \emph{6 weeks training experience} & \textbf{Gupta Construction}\\\multicolumn{2}{c}{} \\
+ \emph{10 days training experience} & \textbf{District Development Community }\\ & \emph{\textsc{Kathmandu}}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{rl}	
+\textsc{Operating System:}  & Windows 98, Windows Vista,\\\\&Windows XP, Windows7, Windows8\\\\
+\textsc{Programming Language:} & C\\\\
+\textsc{Computer Applications:} &Ms Power Point, Ms word, Ms Excel,\\\\& Basic Auto Cad(2D,3D)   \\\\
+\textsc{Non-technical Skills:} &Report Writing, Estimation Calculations, Proposal Writing, \\\\& Communication Skills, Soft Skills\\\\			 
+\end{tabular}
+
+\section{Acheivements \& Certifications}
+\begin{itemize}
+\item Training Certification from \textbf{Gupta Contractors}
+\item Basic autocad certification from \textbf{AutoDesk}
+\end{itemize}
+
+
+
+\section{Projects}
+\begin{tabular}{r|p{11cm}}
+
+\emph{Advanced Status} & \textbf{Use of GLASS in Concrete Technology}\\ \textsc{2015-16} & \small{Glass is a transparent material produced by melting a mixture of materials such as silica, soda ash, and CaCO3 at high temperature followed by cooling where solidification occurs without crystallization. Glass is widely used in our lives through manufactured products such as sheet glass, bottles, glassware, and vacuum tubing. Glass is an ideal material for recycling. The use of recycled glass saves lot of energy and the increasing awareness of glass recycling speeds up focus on the use of waste glass with different forms in various fields. 
+}\\\multicolumn{2}{c}{} \\
+
+
+\emph{Fabrication Status} & \textbf{Fly Ash Used In Concrete}\\ \textsc{Jan-Feb 2014} & \small{As using the wastes of fly ash in concrete give more strength to Concrete. We also got further knowledge that it make good bonding between cement so that it become harder . ACC block which is used instead of brick have not that much strength but it lighter and bigger in size . So, it’s easy to carry and most economical. 
+}\\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+2016  & Bachelors in \textsc{Technology}\\
+2012 & \textbf{Dronacharya Group of Institutions},Greater Noida, India\\
+& \normalsize \textsc{Marks Obtained}: 68.9\% \\\\
+2012 & Senior Secondary Examination \\ 
+2010 &\normalsize\textbf{Geeta Sanjay Public Memorial School}, India\\
+&Marks obtained: 64.3\%\\&\\
+2010& SLC\\ & \textbf{Shree Kanchan Vidya Mandir}, Kanchanpur\\
+&Marks obtained: 73.89\%\\&\\
+\end{tabular}
+
+\section{Volunteering and Participations}
+\subsubsection{Workshops}
+\begin{itemize}
+\item 2 days workshop on all india bridge comepetion(IBCC)
+\begin{itemize}
+\item 1 day workshop on Wings to fly 
+\item 1 day workshop on Project Management
+\end{itemize}
+\end{itemize}
+
+
+\subsubsection{Participations}
+\begin{itemize}
+\item Participated in ITEP exam
+\item Participated in National Creativity Aptitude Test -2014
+\item Participated in cocubes test
+\end{itemize}
+\subsubsection{Professional Socieities Memberships}
+\begin{itemize}
+\item ASCE
+\item ISTE(Indian Society of Technical Education)
+\item Survey Monkey
+\end{itemize}
+
+
+
+\section{Hobbies}
+Playing table tennis, Internet surfing, Playing Badminton, Travelling, Listening to music , Meeting New People and Sharing Experiences.\\
+
+\section{References}
+Available on request
+
+
+\end{document}
+
