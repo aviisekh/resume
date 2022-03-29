@@ -90,7 +90,7 @@ ItalicFont = Fontin-Italic.otf
 %Section: Work Experience at the top
 \section{Experience}
 \begin{tabular}{r|p{11cm}}
-\emph{Current	} & \textbf{Solution Architect}\\ \textsc{February 2019} & \emph{\textsc{Fleetpanda}} \\&\footnotesize{Ruby on Rails, Task Scheduling, Marketplace,SAAS, Schema based Multitenancy, Heroku}\\\multicolumn{2}{c}{} \\
+\emph{Current	} & \textbf{Solution Architect}\\ \textsc{February 2019} & \emph{\textsc{Fleetpanda}} \\&\footnotesize{Ruby on Rails, Task Scheduling, Marketplace, SAAS, Multitenancy, Heroku}\\\multicolumn{2}{c}{} \\
 \emph{November 2018	} & \textbf{Software Engnieer}\\ \textsc{January 2018} & \emph{\textsc{Leapfrog Technology Nepal}} \\&\footnotesize{Ruby on Rails, Jquery, Mentorship, Project Lead}\\\multicolumn{2}{c}{} \\
 \emph{January 2018} & \textbf{Associate Software Engnieer}\\ \textsc{September 2016} & \emph{\textsc{Leapfrog Technology Nepal}} \\&\footnotesize{Javascript, JQuery, EmberJs, Ruby, Ruby on Rails, AWS}\\\multicolumn{2}{c}{} \\
  \emph{Current} & \textbf{AI Fellowship Trainee}\\ \textsc{May 2017} & \emph{\textsc{Fusemachines}} \\&\footnotesize{AI, Machine Learning, Datastructures and Algorighm, Python}\\\multicolumn{2}{c}{} \\
@@ -104,10 +104,10 @@ ItalicFont = Fontin-Italic.otf
 \textsc{Expertise:} &Ruby on Rails, Jquery, EmberJs, React, Postgres, Graphql, Jira\\
 								& REST, TDD with Rspec, Amazon AWS, Heroku, Deployment \\
 								& Sidekiq, Redis, Realtime System, Marketplace, State Machine\\
-								& Twilio, SendSonar, Hellosign, Helloworks,  Pusher, Saas  
+								& Twilio, SendSonar, Hellosign, Helloworks,  Pusher, Saas, ClickUp  
 								\\
 								\\
-\textsc{Programming Concepts:} &OOP, Design Patterns, Web Development, Multitenancy \\
+\textsc{Programming Concepts:} &OOP, TDD, Design Patterns, Web Development, Multitenancy \\
 								&  Agile Methodologies, Datastructures, Artificial Intelligence\\\\
 \textsc{Programming Skills:}  & Java, Android, Python, Ruby, Javascript, C, Shell Scripting\\\\
 \textsc{Database:} & MySQL, SQLite, Postgres, Graphql\\\\
@@ -137,11 +137,10 @@ ItalicFont = Fontin-Italic.otf
 \section{Projects}
 \begin{tabular}{r|p{11cm}}
 
-\emph{Current} & \textbf{Fleetpanda}\\ \textsc{Feb 2019} & \small{Fleetpanda is US based startup marketplace application whose main business is to make delivery of fuel and track their driver's tasks and generate the monetary analytics.
- 
+\emph{Current} & \textbf{Fleetpanda}\\ \textsc{Feb 2019} & \small{Fleetpanda is US based logistic management SAAS platform in fueling industry which serves the business through all web, mobile and BI.
 \footnotesize{
 \begin{itemize}
-\item Multitanent web application.
+\item Saas platform.
 \item Technologies used are ROR, react, Postgres, react-native, heroku, scala, CI, Jira
 \end{itemize}
 }}\\\multicolumn{2}{c}{} \\
